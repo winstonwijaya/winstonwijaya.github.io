@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div className="container-fluid nav-container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{color:"#fff"}}/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

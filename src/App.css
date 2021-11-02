@@ -48,6 +48,7 @@ ul > li > a{
 /**************************** Greeting ******************************/
 .greeting-container{
   padding-top: 5%;
+  display: flex !important;
 }
 
 .profile{
@@ -67,6 +68,17 @@ ul > li > a{
   color: #150050;
 }
 
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
+}
+
 .greeting-text {
   font-size: 2.5rem;
   line-height: 1.1;
@@ -78,6 +90,7 @@ ul > li > a{
   font-size: 1.875rem;
   line-height: 2rem;
 }
+
 
 .wave-emoji {
   animation-duration: 1.8s;
@@ -119,10 +132,14 @@ ul > li > a{
   .greeting-text-p {
     font-size: 20px;
   }
+  .greeting-container{
+    display: block;
+  }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
   }
   .greeting-text {
     font-size: 30px;
@@ -133,8 +150,8 @@ ul > li > a{
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
-    display: block;
+  .greeting-main, .greeting-container {
+    display: block !important;
   }
   .greeting-image-div {
     height: 256px;
@@ -645,6 +662,9 @@ ul > li > a{
 @media (max-width: 768px) {
   .project-subtitle {
     font-size: 16px;
+    text-align: center;
+  }
+  .projects-heading{
     text-align: center;
   }
 }

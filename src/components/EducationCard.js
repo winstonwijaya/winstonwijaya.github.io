@@ -3,7 +3,7 @@ import { createRef} from "react";
 
 export default function EducationCard({school}) {
     const imgRef = createRef(); 
-    console.log(school)
+    // console.log(school)
     const GetDescBullets = ({descBullets}) => {
         return descBullets
           ? descBullets.map((item, i) => (
@@ -15,7 +15,7 @@ export default function EducationCard({school}) {
     };
 
     const imgLoc = school.logo; 
-    console.log(imgLoc);
+    // console.log(imgLoc);
     return (
         <div>
             <div className="education-card">
